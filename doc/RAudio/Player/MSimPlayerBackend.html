@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class RAudio::Player::MSimPlayerBackend - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/raudio/player/msimplayer.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-control">#control</a>
+    
+    <li><a href="#method-i-play">#play</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../RAudio.html">RAudio</a>
+  
+    <li><a href="../../RAudio/Codec.html">RAudio::Codec</a>
+  
+    <li><a href="../../RAudio/Codec/CodecError.html">RAudio::Codec::CodecError</a>
+  
+    <li><a href="../../RAudio/Codec/FileError.html">RAudio::Codec::FileError</a>
+  
+    <li><a href="../../RAudio/Codec/LibFaad2.html">RAudio::Codec::LibFaad2</a>
+  
+    <li><a href="../../RAudio/Codec/LibFishSound.html">RAudio::Codec::LibFishSound</a>
+  
+    <li><a href="../../RAudio/Codec/LibMpg123.html">RAudio::Codec::LibMpg123</a>
+  
+    <li><a href="../../RAudio/Codec/LibOgg.html">RAudio::Codec::LibOgg</a>
+  
+    <li><a href="../../RAudio/Codec/LibOggz.html">RAudio::Codec::LibOggz</a>
+  
+    <li><a href="../../RAudio/Codec/LibSndFile.html">RAudio::Codec::LibSndFile</a>
+  
+    <li><a href="../../RAudio/Codec/LibVorbis.html">RAudio::Codec::LibVorbis</a>
+  
+    <li><a href="../../RAudio/Codec/LibVorbisFile.html">RAudio::Codec::LibVorbisFile</a>
+  
+    <li><a href="../../RAudio/Codec/Mpg123.html">RAudio::Codec::Mpg123</a>
+  
+    <li><a href="../../RAudio/Codec/Raw.html">RAudio::Codec::Raw</a>
+  
+    <li><a href="../../RAudio/Codec/StreamError.html">RAudio::Codec::StreamError</a>
+  
+    <li><a href="../../RAudio/Codec/UnknownError.html">RAudio::Codec::UnknownError</a>
+  
+    <li><a href="../../RAudio/Codec/VorbisFile.html">RAudio::Codec::VorbisFile</a>
+  
+    <li><a href="../../RAudio/Data.html">RAudio::Data</a>
+  
+    <li><a href="../../RAudio/Output.html">RAudio::Output</a>
+  
+    <li><a href="../../RAudio/Output/AO.html">RAudio::Output::AO</a>
+  
+    <li><a href="../../RAudio/Output/DeviceError.html">RAudio::Output::DeviceError</a>
+  
+    <li><a href="../../RAudio/Output/DriverError.html">RAudio::Output::DriverError</a>
+  
+    <li><a href="../../RAudio/Output/FileError.html">RAudio::Output::FileError</a>
+  
+    <li><a href="../../RAudio/Output/LibAO.html">RAudio::Output::LibAO</a>
+  
+    <li><a href="../../RAudio/Output/UnknownError.html">RAudio::Output::UnknownError</a>
+  
+    <li><a href="../../RAudio/Player.html">RAudio::Player</a>
+  
+    <li><a href="../../RAudio/Player/AacPlayer.html">RAudio::Player::AacPlayer</a>
+  
+    <li><a href="../../RAudio/Player/CodecError.html">RAudio::Player::CodecError</a>
+  
+    <li><a href="../../RAudio/Player/FishSoundPlayer.html">RAudio::Player::FishSoundPlayer</a>
+  
+    <li><a href="../../RAudio/Player/MSimPlayer.html">RAudio::Player::MSimPlayer</a>
+  
+    <li><a href="../../RAudio/Player/MSimPlayerBackend.html">RAudio::Player::MSimPlayerBackend</a>
+  
+    <li><a href="../../RAudio/Player/Mp3Player.html">RAudio::Player::Mp3Player</a>
+  
+    <li><a href="../../RAudio/Player/PlayerError.html">RAudio::Player::PlayerError</a>
+  
+    <li><a href="../../RAudio/Player/SimPlayer.html">RAudio::Player::SimPlayer</a>
+  
+    <li><a href="../../RAudio/Player/SndPlayer.html">RAudio::Player::SndPlayer</a>
+  
+    <li><a href="../../RAudio/Player/UnknownError.html">RAudio::Player::UnknownError</a>
+  
+    <li><a href="../../RAudio/Player/VorbisPlayer.html">RAudio::Player::VorbisPlayer</a>
+  
+    <li><a href="../../RAudio/VolumeManager.html">RAudio::VolumeManager</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class RAudio::Player::MSimPlayerBackend</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(driver, initcodec)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/raudio/player/msimplayer.rb, line 152</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">driver</span>, <span class="ruby-identifier">initcodec</span>)
+  <span class="ruby-ivar">@ao</span>      = <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@driver</span>  = <span class="ruby-identifier">driver</span>
+  <span class="ruby-ivar">@init</span>    = <span class="ruby-identifier">initcodec</span>
+  <span class="ruby-ivar">@codec</span>   = <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@file</span>    = <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@volume</span>  = <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@control</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@status</span>  = <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@ctrl_r</span>, <span class="ruby-ivar">@ctrl_w</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@stat_r</span>, <span class="ruby-ivar">@stat_w</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-control" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">control</span><span
+            class="method-args">(command)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="control-source">
+            <pre><span class="ruby-comment"># File lib/raudio/player/msimplayer.rb, line 165</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">control</span>(<span class="ruby-identifier">command</span>)
+  <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@ctrl_w</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@stat_r</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-constant">Player</span><span class="ruby-operator">::</span><span class="ruby-constant">PlayerError</span>,
+    <span class="ruby-string">'Contloller or Player was not open.'</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-ivar">@ctrl_w</span>.<span class="ruby-identifier">puts</span>(<span class="ruby-identifier">command</span>)
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">EPIPE</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">err</span>
+    <span class="ruby-constant">STDERR</span>.<span class="ruby-identifier">printf</span>(<span class="ruby-string">&quot;Error: %s\n&quot;</span>, <span class="ruby-identifier">err</span>)
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-keyword">next</span> <span class="ruby-keyword">until</span> <span class="ruby-identifier">line</span> = <span class="ruby-ivar">@stat_r</span>.<span class="ruby-identifier">gets</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">IOError</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">err</span>
+    <span class="ruby-constant">STDERR</span>.<span class="ruby-identifier">printf</span>(<span class="ruby-string">&quot;Error: %s\n&quot;</span>, <span class="ruby-identifier">err</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">line</span>.<span class="ruby-identifier">chomp</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- control-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- control-method -->
+
+    
+      <div id="method-i-play" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">play</span><span
+            class="method-args">(file, volume, info=nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="play-source">
+            <pre><span class="ruby-comment"># File lib/raudio/player/msimplayer.rb, line 186</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">play</span>(<span class="ruby-identifier">file</span>, <span class="ruby-identifier">volume</span>, <span class="ruby-identifier">info</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-ivar">@file</span>   = <span class="ruby-identifier">file</span>
+  <span class="ruby-ivar">@volume</span> = <span class="ruby-identifier">volume</span>
+  <span class="ruby-ivar">@ctrl_r</span>, <span class="ruby-ivar">@ctrl_w</span> = <span class="ruby-constant">IO</span>.<span class="ruby-identifier">pipe</span> <span class="ruby-comment"># Controller - Decoder</span>
+  <span class="ruby-ivar">@stat_r</span>, <span class="ruby-ivar">@stat_w</span> = <span class="ruby-constant">IO</span>.<span class="ruby-identifier">pipe</span> <span class="ruby-comment"># Decoder - Controller</span>
+  <span class="ruby-identifier">pid</span> = <span class="ruby-identifier">fork</span>{
+    <span class="ruby-ivar">@ctrl_w</span>.<span class="ruby-identifier">close</span>
+    <span class="ruby-ivar">@stat_r</span>.<span class="ruby-identifier">close</span>
+
+    <span class="ruby-ivar">@ao</span>     = <span class="ruby-constant">Output</span><span class="ruby-operator">::</span><span class="ruby-constant">AO</span>.<span class="ruby-identifier">new</span>
+    <span class="ruby-ivar">@ao</span>.<span class="ruby-identifier">set_driver</span>(<span class="ruby-ivar">@driver</span>)
+    <span class="ruby-ivar">@codec</span>  = <span class="ruby-ivar">@init</span>.<span class="ruby-identifier">new</span>
+    <span class="ruby-ivar">@codec</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">file</span>)
+    <span class="ruby-ivar">@ao</span>.<span class="ruby-identifier">open_live</span>(<span class="ruby-ivar">@codec</span>.<span class="ruby-identifier">info</span>)
+    <span class="ruby-ivar">@volume</span>.<span class="ruby-identifier">set_info</span>(<span class="ruby-ivar">@codec</span>.<span class="ruby-identifier">info</span>)
+    <span class="ruby-ivar">@control</span> = <span class="ruby-value">:play</span>
+    <span class="ruby-ivar">@status</span>  = <span class="ruby-value">:stop</span>
+
+    <span class="ruby-comment"># Player</span>
+    <span class="ruby-identifier">play_t</span> = <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">start</span>(){
+      <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">pass</span>
+      <span class="ruby-keyword">while</span> <span class="ruby-identifier">check_control</span>() <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">buffer</span> = <span class="ruby-ivar">@codec</span>.<span class="ruby-identifier">read</span>)
+        <span class="ruby-identifier">snd</span> = <span class="ruby-ivar">@volume</span>.<span class="ruby-identifier">convert</span>(<span class="ruby-identifier">buffer</span>)
+        <span class="ruby-ivar">@ao</span>.<span class="ruby-identifier">play</span>(<span class="ruby-identifier">snd</span>, <span class="ruby-identifier">snd</span>.<span class="ruby-identifier">size</span>)
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-ivar">@status</span> = <span class="ruby-value">:stop</span>
+    }
+    <span class="ruby-identifier">play_t</span>.<span class="ruby-identifier">abort_on_exception</span> = <span class="ruby-keyword">true</span>
+    
+    <span class="ruby-comment"># Controller</span>
+    <span class="ruby-identifier">ctrl_t</span> = <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">start</span>(){
+      <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">pass</span>
+      <span class="ruby-keyword">while</span> (<span class="ruby-identifier">command</span> = <span class="ruby-ivar">@ctrl_r</span>.<span class="ruby-identifier">gets</span>)
+        <span class="ruby-identifier">result</span> = <span class="ruby-identifier">call_command</span>(<span class="ruby-identifier">command</span>.<span class="ruby-identifier">chomp</span>)
+        <span class="ruby-ivar">@stat_w</span>.<span class="ruby-identifier">puts</span>(<span class="ruby-identifier">result</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">chomp</span>)
+      <span class="ruby-keyword">end</span>
+    }
+    <span class="ruby-identifier">ctrl_t</span>.<span class="ruby-identifier">abort_on_exception</span> = <span class="ruby-keyword">true</span>
+
+    <span class="ruby-identifier">sleep</span> <span class="ruby-value">0.1</span> <span class="ruby-keyword">while</span> <span class="ruby-identifier">play_t</span>.<span class="ruby-identifier">alive?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">ctrl_t</span>.<span class="ruby-identifier">alive?</span> 
+    <span class="ruby-identifier">play_t</span>.<span class="ruby-identifier">kill</span>
+    <span class="ruby-identifier">ctrl_t</span>.<span class="ruby-identifier">kill</span>
+    <span class="ruby-ivar">@file</span>    = <span class="ruby-keyword">nil</span>
+    <span class="ruby-ivar">@volume</span>  = <span class="ruby-keyword">nil</span>
+    <span class="ruby-ivar">@control</span> = <span class="ruby-keyword">nil</span>
+    <span class="ruby-ivar">@status</span>  = <span class="ruby-keyword">nil</span>
+    <span class="ruby-ivar">@ao</span>.<span class="ruby-identifier">close</span>()
+    <span class="ruby-ivar">@codec</span>.<span class="ruby-identifier">close</span>()
+  }
+  <span class="ruby-ivar">@ctrl_r</span>.<span class="ruby-identifier">close</span>
+  <span class="ruby-ivar">@stat_w</span>.<span class="ruby-identifier">close</span>
+
+  <span class="ruby-identifier">trap</span>(<span class="ruby-value">:INT</span>){<span class="ruby-constant">Process</span>.<span class="ruby-identifier">kill</span>(<span class="ruby-value">:INT</span>, <span class="ruby-identifier">pid</span>)}
+  <span class="ruby-constant">Process</span>.<span class="ruby-identifier">waitpid</span>(<span class="ruby-identifier">pid</span>)
+
+  <span class="ruby-ivar">@ctrl_w</span>.<span class="ruby-identifier">close</span>
+  <span class="ruby-ivar">@stat_r</span>.<span class="ruby-identifier">close</span>
+  <span class="ruby-ivar">@ctrl_r</span>, <span class="ruby-ivar">@ctrl_w</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@stat_r</span>, <span class="ruby-ivar">@stat_w</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- play-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- play-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

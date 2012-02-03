@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>module RAudio::Codec::LibMpg123 - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/raudio/codec/mpg123/libmpg123.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../RAudio.html">RAudio</a>
+  
+    <li><a href="../../RAudio/Codec.html">RAudio::Codec</a>
+  
+    <li><a href="../../RAudio/Codec/CodecError.html">RAudio::Codec::CodecError</a>
+  
+    <li><a href="../../RAudio/Codec/FileError.html">RAudio::Codec::FileError</a>
+  
+    <li><a href="../../RAudio/Codec/LibFaad2.html">RAudio::Codec::LibFaad2</a>
+  
+    <li><a href="../../RAudio/Codec/LibFishSound.html">RAudio::Codec::LibFishSound</a>
+  
+    <li><a href="../../RAudio/Codec/LibMpg123.html">RAudio::Codec::LibMpg123</a>
+  
+    <li><a href="../../RAudio/Codec/LibOgg.html">RAudio::Codec::LibOgg</a>
+  
+    <li><a href="../../RAudio/Codec/LibOggz.html">RAudio::Codec::LibOggz</a>
+  
+    <li><a href="../../RAudio/Codec/LibSndFile.html">RAudio::Codec::LibSndFile</a>
+  
+    <li><a href="../../RAudio/Codec/LibVorbis.html">RAudio::Codec::LibVorbis</a>
+  
+    <li><a href="../../RAudio/Codec/LibVorbisFile.html">RAudio::Codec::LibVorbisFile</a>
+  
+    <li><a href="../../RAudio/Codec/Mpg123.html">RAudio::Codec::Mpg123</a>
+  
+    <li><a href="../../RAudio/Codec/Raw.html">RAudio::Codec::Raw</a>
+  
+    <li><a href="../../RAudio/Codec/StreamError.html">RAudio::Codec::StreamError</a>
+  
+    <li><a href="../../RAudio/Codec/UnknownError.html">RAudio::Codec::UnknownError</a>
+  
+    <li><a href="../../RAudio/Codec/VorbisFile.html">RAudio::Codec::VorbisFile</a>
+  
+    <li><a href="../../RAudio/Data.html">RAudio::Data</a>
+  
+    <li><a href="../../RAudio/Output.html">RAudio::Output</a>
+  
+    <li><a href="../../RAudio/Output/AO.html">RAudio::Output::AO</a>
+  
+    <li><a href="../../RAudio/Output/DeviceError.html">RAudio::Output::DeviceError</a>
+  
+    <li><a href="../../RAudio/Output/DriverError.html">RAudio::Output::DriverError</a>
+  
+    <li><a href="../../RAudio/Output/FileError.html">RAudio::Output::FileError</a>
+  
+    <li><a href="../../RAudio/Output/LibAO.html">RAudio::Output::LibAO</a>
+  
+    <li><a href="../../RAudio/Output/UnknownError.html">RAudio::Output::UnknownError</a>
+  
+    <li><a href="../../RAudio/Player.html">RAudio::Player</a>
+  
+    <li><a href="../../RAudio/Player/AacPlayer.html">RAudio::Player::AacPlayer</a>
+  
+    <li><a href="../../RAudio/Player/CodecError.html">RAudio::Player::CodecError</a>
+  
+    <li><a href="../../RAudio/Player/FishSoundPlayer.html">RAudio::Player::FishSoundPlayer</a>
+  
+    <li><a href="../../RAudio/Player/MSimPlayer.html">RAudio::Player::MSimPlayer</a>
+  
+    <li><a href="../../RAudio/Player/MSimPlayerBackend.html">RAudio::Player::MSimPlayerBackend</a>
+  
+    <li><a href="../../RAudio/Player/Mp3Player.html">RAudio::Player::Mp3Player</a>
+  
+    <li><a href="../../RAudio/Player/PlayerError.html">RAudio::Player::PlayerError</a>
+  
+    <li><a href="../../RAudio/Player/SimPlayer.html">RAudio::Player::SimPlayer</a>
+  
+    <li><a href="../../RAudio/Player/SndPlayer.html">RAudio::Player::SndPlayer</a>
+  
+    <li><a href="../../RAudio/Player/UnknownError.html">RAudio::Player::UnknownError</a>
+  
+    <li><a href="../../RAudio/Player/VorbisPlayer.html">RAudio::Player::VorbisPlayer</a>
+  
+    <li><a href="../../RAudio/VolumeManager.html">RAudio::VolumeManager</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module RAudio::Codec::LibMpg123</h1>
+
+  <div id="description" class="description">
+    
+<h2 id="label-libfaad2+wrapper">libfaad2 wrapper</h2>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="AVAILABLE">AVAILABLE
+        
+        <dd class="description">
+        
+      
+        <dt id="MPG123_API_VERSION">MPG123_API_VERSION
+        
+        <dd class="description">
+        
+      
+        <dt id="MPG123_ICY">MPG123_ICY
+        
+        <dd class="description">
+        
+      
+        <dt id="MPG123_ID3">MPG123_ID3
+        
+        <dd class="description"><p>define <a href="LibMpg123.html#MPG123_ID3">MPG123_ID3</a>     0x3    &lt;
+0011 There is some ID3 info. Also matches 0010 or NEW_ID3.</p>
+
+<p>define <a href="LibMpg123.html#MPG123_NEW_ID3">MPG123_NEW_ID3</a> 0x1   
+&lt; 0001 There is ID3 info that changed since last call to mpg123_id3.</p>
+
+<p>define <a href="LibMpg123.html#MPG123_ICY">MPG123_ICY</a>     0xc /**&lt;
+1100 There is some ICY info. Also matches 0100 or NEW_ICY.*/ define <a
+href="LibMpg123.html#MPG123_NEW_ICY">MPG123_NEW_ICY</a> 0x4 /**&lt; 0100
+There is ICY info that changed since last call to mpg123_icy. */</p>
+        
+      
+        <dt id="MPG123_NEW_ICY">MPG123_NEW_ICY
+        
+        <dd class="description">
+        
+      
+        <dt id="MPG123_NEW_ID3">MPG123_NEW_ID3
+        
+        <dd class="description">
+        
+      
+        <dt id="Mpg123_ChannelCount">Mpg123_ChannelCount
+        
+        <dd class="description"><pre>They can be combined into one number (3) to indicate mono and stereo...</pre>
+
+<p>enum mpg123_channelcount {</p>
+
+<pre> MPG123_MONO   = 1
+,MPG123_STEREO = 2</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_Channels">Mpg123_Channels
+        
+        <dd class="description"><p>enum mpg123_channels {</p>
+
+<pre> MPG123_LEFT=0x1          &lt; The Left Channel.   
+,MPG123_RIGHT=0x2         &lt; The Right Channel.   
+,MPG123_LR=0x3 /**&lt; Both left and right channel; same as MPG123_LEFT|MPG123_RIGHT */</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_Enc_Enum">Mpg123_Enc_Enum
+        
+        <dd class="description"><pre>An enum over all sample types possibly known to mpg123.
+The values are designed as bit flags to allow bitmasking for encoding families.
+
+Note that (your build of) libmpg123 does not necessarily support all these.
+Usually, you can expect the 8bit encodings and signed 16 bit.
+Also 32bit float will be usual beginning with mpg123-1.7.0 .
+What you should bear in mind is that (SSE, etc) optimized routines are just for
+signed 16bit (and 8bit derived from that). Other formats use plain C code.
+
+All formats are in native byte order. On a little endian machine this should mean
+that you can just feed the MPG123_ENC_SIGNED_32 data to common 24bit hardware that
+ignores the lowest byte (or you could choose to do rounding with these lower bits).</pre>
+
+<p>enum mpg123_enc_enum {</p>
+
+<pre> MPG123_ENC_8      = 0x00f     &lt; 0000 0000 1111 Some 8 bit  integer encoding.    
+,MPG123_ENC_16     = 0x040  /**&lt; 0000 0100 0000 Some 16 bit integer encoding. */
+,MPG123_ENC_32     = 0x100  /**&lt; 0001 0000 0000 Some 32 bit integer encoding. */
+,MPG123_ENC_SIGNED = 0x080  /**&lt; 0000 1000 0000 Some signed integer encoding. */
+,MPG123_ENC_FLOAT  = 0xe00  /**&lt; 1110 0000 0000 Some float encoding. */
+,MPG123_ENC_SIGNED_16   = (MPG123_ENC_16|MPG123_ENC_SIGNED|0x10) /**&lt;           1101 0000 signed 16 bit */
+,MPG123_ENC_UNSIGNED_16 = (MPG123_ENC_16|0x20)                   /**&lt;           0110 0000 unsigned 16 bit */
+,MPG123_ENC_UNSIGNED_8  = 0x01                                   /**&lt;           0000 0001 unsigned 8 bit */
+,MPG123_ENC_SIGNED_8    = (MPG123_ENC_SIGNED|0x02)               /**&lt;           1000 0010 signed 8 bit */
+,MPG123_ENC_ULAW_8      = 0x04                                   /**&lt;           0000 0100 ulaw 8 bit */
+,MPG123_ENC_ALAW_8      = 0x08                                   /**&lt;           0000 1000 alaw 8 bit */
+,MPG123_ENC_SIGNED_32   = MPG123_ENC_32|MPG123_ENC_SIGNED|0x1000 /**&lt; 0001 0001 1000 0000 signed 32 bit */
+,MPG123_ENC_UNSIGNED_32 = MPG123_ENC_32|0x2000                   /**&lt; 0010 0001 0000 0000 unsigned 32 bit */
+,MPG123_ENC_FLOAT_32    = 0x200                                  /**&lt;      0010 0000 0000 32bit float */
+,MPG123_ENC_FLOAT_64    = 0x400                                  /**&lt;      0100 0000 0000 64bit float */
+,MPG123_ENC_ANY = ( MPG123_ENC_SIGNED_16  | MPG123_ENC_UNSIGNED_16 | MPG123_ENC_UNSIGNED_8 
+                  | MPG123_ENC_SIGNED_8   | MPG123_ENC_ULAW_8      | MPG123_ENC_ALAW_8
+                  | MPG123_ENC_SIGNED_32  | MPG123_ENC_UNSIGNED_32
+                  | MPG123_ENC_FLOAT_32   | MPG123_ENC_FLOAT_64 ) /**&lt; any encoding */</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_Errors">Mpg123_Errors
+        
+        <dd class="description"><pre>Enumeration of the message and error codes and returned by libmpg123 functions.</pre>
+
+<p>enum mpg123_errors {</p>
+
+<pre>MPG123_DONE=-12,          &lt; Message: Track ended. Stop decoding.   
+MPG123_NEW_FORMAT=-11, /**&lt; Message: Output format will be different on next call. Note that some libmpg123 versions between 1.4.3 and 1.8.0 insist on you calling mpg123_getformat() after getting this message code. Newer verisons behave like advertised: You have the chance to call mpg123_getformat(), but you can also just continue decoding and get your data. */
+MPG123_NEED_MORE=-10,  /**&lt; Message: For feed reader: &quot;Feed me more!&quot; (call mpg123_feed() or mpg123_decode() with some new input data). */
+MPG123_ERR=-1,                 /**&lt; Generic Error */
+MPG123_OK=0,                   /**&lt; Success */
+MPG123_BAD_OUTFORMAT,  /**&lt; Unable to set up output format! */
+MPG123_BAD_CHANNEL,            /**&lt; Invalid channel number specified. */
+MPG123_BAD_RATE,               /**&lt; Invalid sample rate specified.  */
+MPG123_ERR_16TO8TABLE, /**&lt; Unable to allocate memory for 16 to 8 converter table! */
+MPG123_BAD_PARAM,              /**&lt; Bad parameter id! */
+MPG123_BAD_BUFFER,             /**&lt; Bad buffer given -- invalid pointer or too small size. */
+MPG123_OUT_OF_MEM,             /**&lt; Out of memory -- some malloc() failed. */
+MPG123_NOT_INITIALIZED,        /**&lt; You didn't initialize the library! */
+MPG123_BAD_DECODER,            /**&lt; Invalid decoder choice. */
+MPG123_BAD_HANDLE,             /**&lt; Invalid mpg123 handle. */
+MPG123_NO_BUFFERS,             /**&lt; Unable to initialize frame buffers (out of memory?). */
+MPG123_BAD_RVA,                        /**&lt; Invalid RVA mode. */
+MPG123_NO_GAPLESS,             /**&lt; This build doesn't support gapless decoding. */
+MPG123_NO_SPACE,               /**&lt; Not enough buffer space. */
+MPG123_BAD_TYPES,              /**&lt; Incompatible numeric data types. */
+MPG123_BAD_BAND,               /**&lt; Bad equalizer band. */
+MPG123_ERR_NULL,               /**&lt; Null pointer given where valid storage address needed. */
+MPG123_ERR_READER,             /**&lt; Error reading the stream. */
+MPG123_NO_SEEK_FROM_END,/**&lt; Cannot seek from end (end is not known). */
+MPG123_BAD_WHENCE,             /**&lt; Invalid 'whence' for seek function.*/
+MPG123_NO_TIMEOUT,             /**&lt; Build does not support stream timeouts. */
+MPG123_BAD_FILE,               /**&lt; File access error. */
+MPG123_NO_SEEK,                        /**&lt; Seek not supported by stream. */
+MPG123_NO_READER,              /**&lt; No stream opened. */
+MPG123_BAD_PARS,               /**&lt; Bad parameter handle. */
+MPG123_BAD_INDEX_PAR,  /**&lt; Bad parameters to mpg123_index() and mpg123_set_index() */
+MPG123_OUT_OF_SYNC,    /**&lt; Lost track in bytestream and did not try to resync. */
+MPG123_RESYNC_FAIL,    /**&lt; Resync failed to find valid MPEG data. */
+MPG123_NO_8BIT,        /**&lt; No 8bit encoding possible. */
+MPG123_BAD_ALIGN,      /**&lt; Stack aligmnent error */
+MPG123_NULL_BUFFER,    /**&lt; NULL input buffer with non-zero size... */
+MPG123_NO_RELSEEK,     /**&lt; Relative seek not possible (screwed up file offset) */
+MPG123_NULL_POINTER, /**&lt; You gave a null pointer somewhere where you shouldn't have. */
+MPG123_BAD_KEY,        /**&lt; Bad key value given. */
+MPG123_NO_INDEX,       /**&lt; No frame index in this build. */
+MPG123_INDEX_FAIL,     /**&lt; Something with frame index went wrong. */
+MPG123_BAD_DECODER_SETUP,      /**&lt; Something prevents a proper decoder setup */
+MPG123_MISSING_FEATURE  /**&lt; This feature has not been built into libmpg123. */
+,MPG123_BAD_VALUE /**&lt; A bad value has been given, somewhere. */
+,MPG123_LSEEK_FAILED /**&lt; Low-level seek failed. */
+,MPG123_BAD_CUSTOM_IO /**&lt; Custom I/O not prepared. */
+,MPG123_LFS_OVERFLOW /**&lt; Offset value overflow during translation of large file API calls -- your client program cannot handle that large file. */</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_Feature_Set">Mpg123_Feature_Set
+        
+        <dd class="description"><pre>Feature set available for query with mpg123_feature.</pre>
+
+<p>enum mpg123_feature_set {</p>
+
+<pre> MPG123_FEATURE_ABI_UTF8OPEN = 0        &lt; mpg123 expects path names to be given in UTF-8 encoding instead of plain native.   
+,MPG123_FEATURE_OUTPUT_8BIT          /**&lt; 8bit output   */
+,MPG123_FEATURE_OUTPUT_16BIT         /**&lt; 16bit output  */
+,MPG123_FEATURE_OUTPUT_32BIT         /**&lt; 32bit output  */
+,MPG123_FEATURE_INDEX                /**&lt; support for building a frame index for accurate seeking */
+,MPG123_FEATURE_PARSE_ID3V2          /**&lt; id3v2 parsing */
+,MPG123_FEATURE_DECODE_LAYER1        /**&lt; mpeg layer-1 decoder enabled */
+,MPG123_FEATURE_DECODE_LAYER2        /**&lt; mpeg layer-2 decoder enabled */
+,MPG123_FEATURE_DECODE_LAYER3        /**&lt; mpeg layer-3 decoder enabled */
+,MPG123_FEATURE_DECODE_ACCURATE      /**&lt; accurate decoder rounding    */
+,MPG123_FEATURE_DECODE_DOWNSAMPLE    /**&lt; downsample (sample omit)     */
+,MPG123_FEATURE_DECODE_NTOM          /**&lt; flexible rate decoding       */
+,MPG123_FEATURE_PARSE_ICY            /**&lt; ICY support                  */</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_Flags">Mpg123_Flags
+        
+        <dd class="description"><pre>Enumeration of the MPEG Audio flag bits</pre>
+
+<p>enum mpg123_flags {</p>
+
+<pre>MPG123_CRC=0x1,                           &lt; The bitstream is error protected using 16-bit CRC.   
+MPG123_COPYRIGHT=0x2,  /**&lt; The bitstream is copyrighted. */
+MPG123_PRIVATE=0x4,            /**&lt; The private bit has been set. */
+MPG123_ORIGINAL=0x8    /**&lt; The bitstream is an original, not a copy. */</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_FrameInfo">Mpg123_FrameInfo
+        
+        <dd class="description"><pre>Data structure for storing information about a frame of MPEG Audio</pre>
+
+<p>struct mpg123_frameinfo {</p>
+
+<pre>enum mpg123_version version;      &lt; The MPEG version (1.0/2.0/2.5).   
+int layer;                                             /**&lt; The MPEG Audio Layer (MP1/MP2/MP3). */
+long rate;                                             /**&lt; The sampling rate in Hz. */
+enum mpg123_mode mode;                 /**&lt; The audio mode (Mono, Stereo, Joint-stero, Dual Channel). */
+int mode_ext;                                  /**&lt; The mode extension bit flag. */
+int framesize;                                 /**&lt; The size of the frame (in bytes). */
+enum mpg123_flags flags;               /**&lt; MPEG Audio flag bits. */
+int emphasis;                                  /**&lt; The emphasis type. */
+int bitrate;                                   /**&lt; Bitrate of the frame (kbps). */
+int abr_rate;                                  /**&lt; The target average bitrate. */
+enum mpg123_vbr vbr;                   /**&lt; The VBR mode. */</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_ID3_Enc">Mpg123_ID3_Enc
+        
+        <dd class="description"><pre>The encoding byte values from ID3v2.</pre>
+
+<p>enum mpg123_id3_enc {</p>
+
+<pre> mpg123_id3_latin1   = 0    &lt; Note: This sometimes can mean anything in practice...   
+,mpg123_id3_utf16bom = 1 /**&lt; UTF16, UCS-2 ... it's all the same for practical purposes. */
+,mpg123_id3_utf16be  = 2 /**&lt; Big-endian UTF-16, BOM see note for mpg123_text_utf16be. */
+,mpg123_id3_utf8     = 3 /**&lt; Our lovely overly ASCII-compatible 8 byte encoding for the world. */
+,mpg123_id3_enc_max  = 3 /**&lt; Placeholder to check valid range of encoding byte. */</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_ID3v1">Mpg123_ID3v1
+        
+        <dd class="description"><pre>Data structure for ID3v1 tags (the last 128 bytes of a file).
+Don't take anything for granted (like string termination)!
+Also note the change ID3v1.1 did: comment[28] = 0; comment[19] = track_number
+It is your task to support ID3v1 only or ID3v1.1 ...</pre>
+
+<p>typedef struct {</p>
+
+<pre>char tag[3];            &lt; Always the string &quot;TAG&quot;, the classic intro.   
+char title[30];      /**&lt; Title string.  */
+char artist[30];     /**&lt; Artist string. */
+char album[30];      /**&lt; Album string. */
+char year[4];        /**&lt; Year string. */
+char comment[30];    /**&lt; Comment string. */
+unsigned char genre; /**&lt; Genre index. */</pre>
+
+<p>} mpg123_id3v1;</p>
+        
+      
+        <dt id="Mpg123_ID3v2">Mpg123_ID3v2
+        
+        <dd class="description"><pre>Data structure for storing IDV3v2 tags.
+This structure is not a direct binary mapping with the file contents.
+The ID3v2 text frames are allowed to contain multiple strings.
+So check for null bytes until you reach the mpg123_string fill.
+All text is encoded in UTF-8.</pre>
+
+<p>typedef struct {</p>
+
+<pre>unsigned char version;    &lt; 3 or 4 for ID3v2.3 or ID3v2.4.   
+mpg123_string *title;   /**&lt; Title string (pointer into text_list). */
+mpg123_string *artist;  /**&lt; Artist string (pointer into text_list). */
+mpg123_string *album;   /**&lt; Album string (pointer into text_list). */
+mpg123_string *year;    /**&lt; The year as a string (pointer into text_list). */
+mpg123_string *genre;   /**&lt; Genre String (pointer into text_list). The genre string(s) may very well need postprocessing, esp. for ID3v2.3. */
+mpg123_string *comment; /**&lt; Pointer to last encountered comment text with empty description. */
+/* Encountered ID3v2 fields are appended to these lists.
+   There can be multiple occurences, the pointers above always point to the last encountered data. */
+mpg123_text    *comment_list; /**&lt; Array of comments. */
+size_t          comments;     /**&lt; Number of comments. */
+mpg123_text    *text;         /**&lt; Array of ID3v2 text fields (including USLT) */
+size_t          texts;        /**&lt; Numer of text fields. */
+mpg123_text    *extra;        /**&lt; The array of extra (TXXX) fields. */
+size_t          extras;       /**&lt; Number of extra text (TXXX) fields. */</pre>
+
+<p>} mpg123_id3v2;</p>
+        
+      
+        <dt id="Mpg123_Mode">Mpg123_Mode
+        
+        <dd class="description"><pre>Enumeration of the MPEG Audio mode.
+Only the mono mode has 1 channel, the others have 2 channels.</pre>
+
+<p>enum mpg123_mode {</p>
+
+<pre>MPG123_M_STEREO=0,        &lt; Standard Stereo.   
+MPG123_M_JOINT,                /**&lt; Joint Stereo. */
+MPG123_M_DUAL,         /**&lt; Dual Channel. */
+MPG123_M_MONO          /**&lt; Single Channel. */</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_Param_Flags">Mpg123_Param_Flags
+        
+        <dd class="description"><pre>Flag bits for MPG123_FLAGS, use the usual binary or to combine.</pre>
+
+<p>enum mpg123_param_flags {</p>
+
+<pre> MPG123_FORCE_MONO   = 0x7     &lt;     0111 Force some mono mode: This is a test bitmask for seeing if any mono forcing is active.   
+,MPG123_MONO_LEFT    = 0x1  /**&lt;     0001 Force playback of left channel only.  */
+,MPG123_MONO_RIGHT   = 0x2  /**&lt;     0010 Force playback of right channel only. */
+,MPG123_MONO_MIX     = 0x4  /**&lt;     0100 Force playback of mixed mono.         */
+,MPG123_FORCE_STEREO = 0x8  /**&lt;     1000 Force stereo output.                  */
+,MPG123_FORCE_8BIT   = 0x10 /**&lt; 00010000 Force 8bit formats.                   */
+,MPG123_QUIET        = 0x20 /**&lt; 00100000 Suppress any printouts (overrules verbose).                    */
+,MPG123_GAPLESS      = 0x40 /**&lt; 01000000 Enable gapless decoding (default on if libmpg123 has support). */
+,MPG123_NO_RESYNC    = 0x80 /**&lt; 10000000 Disable resync stream after error.                             */
+,MPG123_SEEKBUFFER   = 0x100 /**&lt; 000100000000 Enable small buffer on non-seekable streams to allow some peek-ahead (for better MPEG sync). */
+,MPG123_FUZZY        = 0x200 /**&lt; 001000000000 Enable fuzzy seeks (guessing byte offsets or using approximate seek points from Xing TOC) */
+,MPG123_FORCE_FLOAT  = 0x400 /**&lt; 010000000000 Force floating point output (32 or 64 bits depends on mpg123 internal precision). */
+,MPG123_PLAIN_ID3TEXT = 0x800 /**&lt; 100000000000 Do not translate ID3 text data to UTF-8. ID3 strings will contain the raw text data, with the first byte containing the ID3 encoding code. */
+,MPG123_IGNORE_STREAMLENGTH = 0x1000 /**&lt; 1000000000000 Ignore any stream length information contained in the stream, which can be contained in a 'TLEN' frame of an ID3v2 tag or a Xing tag */</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_Param_Rva">Mpg123_Param_Rva
+        
+        <dd class="description"><pre>choices for MPG123_RVA</pre>
+
+<p>enum mpg123_param_rva {</p>
+
+<pre> MPG123_RVA_OFF   = 0    &lt; RVA disabled (default).     
+,MPG123_RVA_MIX   = 1 /**&lt; Use mix/track/radio gain. */
+,MPG123_RVA_ALBUM = 2 /**&lt; Use album/audiophile gain */
+,MPG123_RVA_MAX   = MPG123_RVA_ALBUM /**&lt; The maximum RVA code, may increase in future. */</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_Parms">Mpg123_Parms
+        
+        <dd class="description"><pre>Enumeration of the parameters types that it is possible to set/get.</pre>
+
+<p>enum mpg123_parms {</p>
+
+<pre>MPG123_VERBOSE,           &lt; set verbosity value for enabling messages to stderr, &gt;= 0 makes sense (integer)   
+MPG123_FLAGS,          /**&lt; set all flags, p.ex val = MPG123_GAPLESS|MPG123_MONO_MIX (integer) */
+MPG123_ADD_FLAGS,      /**&lt; add some flags (integer) */
+MPG123_FORCE_RATE,     /**&lt; when value &gt; 0, force output rate to that value (integer) */
+MPG123_DOWN_SAMPLE,    /**&lt; 0=native rate, 1=half rate, 2=quarter rate (integer) */
+MPG123_RVA,            /**&lt; one of the RVA choices above (integer) */
+MPG123_DOWNSPEED,      /**&lt; play a frame N times (integer) */
+MPG123_UPSPEED,        /**&lt; play every Nth frame (integer) */
+MPG123_START_FRAME,    /**&lt; start with this frame (skip frames before that, integer) */ 
+MPG123_DECODE_FRAMES,  /**&lt; decode only this number of frames (integer) */
+MPG123_ICY_INTERVAL,   /**&lt; stream contains ICY metadata with this interval (integer) */
+MPG123_OUTSCALE,       /**&lt; the scale for output samples (amplitude - integer or float according to mpg123 output format, normally integer) */
+MPG123_TIMEOUT,        /**&lt; timeout for reading from a stream (not supported on win32, integer) */
+MPG123_REMOVE_FLAGS,   /**&lt; remove some flags (inverse of MPG123_ADD_FLAGS, integer) */
+MPG123_RESYNC_LIMIT,   /**&lt; Try resync on frame parsing for that many bytes or until end of stream (&lt;0 ... integer). */
+MPG123_INDEX_SIZE      /**&lt; Set the frame index size (if supported). Values &lt;0 mean that the index is allowed to grow dynamically in these steps (in positive direction, of course) -- Use this when you really want a full index with every individual frame. */
+,MPG123_PREFRAMES /**&lt; Decode/ignore that many frames in advance for layer 3. This is needed to fill bit reservoir after seeking, for example (but also at least one frame in advance is needed to have all &quot;normal&quot; data for layer 3). Give a positive integer value, please.*/</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_State">Mpg123_State
+        
+        <dd class="description"><pre>The key values for state information from mpg123_getstate().</pre>
+
+<p>enum mpg123_state {</p>
+
+<pre>MPG123_ACCURATE = 1    &lt; Query if positons are currently accurate (integer value, 0 if false, 1 if true)</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_String">Mpg123_String
+        
+        <dd class="description"><pre>Data structure for storing strings in a safer way than a standard C-String.
+Can also hold a number of null-terminated strings.</pre>
+
+<p>typedef struct  {</p>
+
+<pre>char* p;        &lt; pointer to the string data   
+size_t size; /**&lt; raw number of bytes allocated */
+size_t fill; /**&lt; number of used bytes (including closing zero byte) */</pre>
+
+<p>} mpg123_string;</p>
+        
+      
+        <dt id="Mpg123_Text">Mpg123_Text
+        
+        <dd class="description"><p><a href="LibMpg123.html#Mpg123_Text">Mpg123_Text</a> =</p>
+
+<pre>struct(['char lang[3]',
+        'char id[4]',
+        'mpg123_string description',
+        'mpg123_string text'])</pre>
+        
+      
+        <dt id="Mpg123_Text_Encoding">Mpg123_Text_Encoding
+        
+        <dd class="description"><pre>The mpg123 text encodings. This contains encodings we encounter in ID3 tags or ICY meta info.</pre>
+
+<p>enum mpg123_text_encoding {</p>
+
+<pre> mpg123_text_unknown  = 0    &lt; Unkown encoding... mpg123_id3_encoding can return that on invalid codes.   
+,mpg123_text_utf8     = 1 /**&lt; UTF-8 */
+,mpg123_text_latin1   = 2 /**&lt; ISO-8859-1. Note that sometimes latin1 in ID3 is abused for totally different encodings. */
+,mpg123_text_icy      = 3 /**&lt; ICY metadata encoding, usually CP-1252 but we take it as UTF-8 if it qualifies as such. */
+,mpg123_text_cp1252   = 4 /**&lt; Really CP-1252 without any guessing. */
+,mpg123_text_utf16    = 5 /**&lt; Some UTF-16 encoding. The last of a set of leading BOMs (byte order mark) rules.
+                               When there is no BOM, big endian ordering is used. Note that UCS-2 qualifies as UTF-8 when
+                               you don't mess with the reserved code points. If you want to decode little endian data
+                               without BOM you need to prepend 0xff 0xfe yourself. */
+,mpg123_text_utf16bom = 6 /**&lt; Just an alias for UTF-16, ID3v2 has this as distinct code. */
+,mpg123_text_utf16be  = 7 /**&lt; Another alias for UTF16 from ID3v2. Note, that, because of the mess that is reality,
+                               BOMs are used if encountered. There really is not much distinction between the UTF16 types for mpg123
+                               One exception: Since this is seen in ID3v2 tags, leading null bytes are skipped for all other UTF16
+                               types (we expect a BOM before real data there), not so for utf16be!*/
+,mpg123_text_max      = 7 /**&lt; Placeholder for the maximum encoding value. */</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_Vbr">Mpg123_Vbr
+        
+        <dd class="description"><pre>Enumeration of the mode types of Variable Bitrate</pre>
+
+<p>enum mpg123_vbr {</p>
+
+<pre>MPG123_CBR=0,     &lt; Constant Bitrate Mode (default)   
+MPG123_VBR,            /**&lt; Variable Bitrate Mode */
+MPG123_ABR             /**&lt; Average Bitrate Mode */</pre>
+
+<p>};</p>
+        
+      
+        <dt id="Mpg123_Version">Mpg123_Version
+        
+        <dd class="description"><pre>Enumeration of the MPEG Versions</pre>
+
+<p>enum mpg123_version {</p>
+
+<pre>MPG123_1_0=0,     &lt; MPEG Version 1.0   
+MPG123_2_0,            /**&lt; MPEG Version 2.0 */
+MPG123_2_5             /**&lt; MPEG Version 2.5 */</pre>
+
+<p>};</p>
+        
+      
+        <dt id="R_Lseek">R_Lseek
+        
+        <dd class="description">
+        
+      
+        <dt id="R_Read">R_Read
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    <!-- Methods -->
+    
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,45 @@
+#-----------------------------------------
+# raudio
+# https://github.com/Phenomer/raudio
+#-----------------------------------------
+
+cross-platform audio library bindings for ruby1.9 
+
+* Depend
+- ruby1.9/dl
+- libao
+- libogg
+- libvorbis
+- libmpg123
+
+* Original documents
+- ruby 
+  http://www.ruby-lang.org/
+- libao
+  http://www.xiph.org/ao/
+- libogg
+  http://www.xiph.org/ogg/
+- libvorbis
+  http://www.xiph.org/vorbis/
+
+* Setup
+sudo aptitude install libao-dev libogg-dev libvorbis-dev libmpg123-dev
+
+* License
+Copyright (C) 2011 Akito Miura
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or (at
+your option) any later version. This program is distributed in the
+hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE. See the GNU General Public License for more details. You
+should have received a copy of the GNU General Public License along
+with this program. If not, see <http://www.gnu.org/licenses/>.
+
+* Contact
+- Twitter
+  http://twitter.com/Phenomer
+
+- Github
+  https://github.com/Phenomer

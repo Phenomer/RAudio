@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>module RAudio::Codec::LibOgg - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/raudio/codec/xiph/libogg.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../RAudio.html">RAudio</a>
+  
+    <li><a href="../../RAudio/Codec.html">RAudio::Codec</a>
+  
+    <li><a href="../../RAudio/Codec/CodecError.html">RAudio::Codec::CodecError</a>
+  
+    <li><a href="../../RAudio/Codec/FileError.html">RAudio::Codec::FileError</a>
+  
+    <li><a href="../../RAudio/Codec/LibFaad2.html">RAudio::Codec::LibFaad2</a>
+  
+    <li><a href="../../RAudio/Codec/LibFishSound.html">RAudio::Codec::LibFishSound</a>
+  
+    <li><a href="../../RAudio/Codec/LibMpg123.html">RAudio::Codec::LibMpg123</a>
+  
+    <li><a href="../../RAudio/Codec/LibOgg.html">RAudio::Codec::LibOgg</a>
+  
+    <li><a href="../../RAudio/Codec/LibOggz.html">RAudio::Codec::LibOggz</a>
+  
+    <li><a href="../../RAudio/Codec/LibSndFile.html">RAudio::Codec::LibSndFile</a>
+  
+    <li><a href="../../RAudio/Codec/LibVorbis.html">RAudio::Codec::LibVorbis</a>
+  
+    <li><a href="../../RAudio/Codec/LibVorbisFile.html">RAudio::Codec::LibVorbisFile</a>
+  
+    <li><a href="../../RAudio/Codec/Mpg123.html">RAudio::Codec::Mpg123</a>
+  
+    <li><a href="../../RAudio/Codec/Raw.html">RAudio::Codec::Raw</a>
+  
+    <li><a href="../../RAudio/Codec/StreamError.html">RAudio::Codec::StreamError</a>
+  
+    <li><a href="../../RAudio/Codec/UnknownError.html">RAudio::Codec::UnknownError</a>
+  
+    <li><a href="../../RAudio/Codec/VorbisFile.html">RAudio::Codec::VorbisFile</a>
+  
+    <li><a href="../../RAudio/Data.html">RAudio::Data</a>
+  
+    <li><a href="../../RAudio/Output.html">RAudio::Output</a>
+  
+    <li><a href="../../RAudio/Output/AO.html">RAudio::Output::AO</a>
+  
+    <li><a href="../../RAudio/Output/DeviceError.html">RAudio::Output::DeviceError</a>
+  
+    <li><a href="../../RAudio/Output/DriverError.html">RAudio::Output::DriverError</a>
+  
+    <li><a href="../../RAudio/Output/FileError.html">RAudio::Output::FileError</a>
+  
+    <li><a href="../../RAudio/Output/LibAO.html">RAudio::Output::LibAO</a>
+  
+    <li><a href="../../RAudio/Output/UnknownError.html">RAudio::Output::UnknownError</a>
+  
+    <li><a href="../../RAudio/Player.html">RAudio::Player</a>
+  
+    <li><a href="../../RAudio/Player/AacPlayer.html">RAudio::Player::AacPlayer</a>
+  
+    <li><a href="../../RAudio/Player/CodecError.html">RAudio::Player::CodecError</a>
+  
+    <li><a href="../../RAudio/Player/FishSoundPlayer.html">RAudio::Player::FishSoundPlayer</a>
+  
+    <li><a href="../../RAudio/Player/MSimPlayer.html">RAudio::Player::MSimPlayer</a>
+  
+    <li><a href="../../RAudio/Player/MSimPlayerBackend.html">RAudio::Player::MSimPlayerBackend</a>
+  
+    <li><a href="../../RAudio/Player/Mp3Player.html">RAudio::Player::Mp3Player</a>
+  
+    <li><a href="../../RAudio/Player/PlayerError.html">RAudio::Player::PlayerError</a>
+  
+    <li><a href="../../RAudio/Player/SimPlayer.html">RAudio::Player::SimPlayer</a>
+  
+    <li><a href="../../RAudio/Player/SndPlayer.html">RAudio::Player::SndPlayer</a>
+  
+    <li><a href="../../RAudio/Player/UnknownError.html">RAudio::Player::UnknownError</a>
+  
+    <li><a href="../../RAudio/Player/VorbisPlayer.html">RAudio::Player::VorbisPlayer</a>
+  
+    <li><a href="../../RAudio/VolumeManager.html">RAudio::VolumeManager</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module RAudio::Codec::LibOgg</h1>
+
+  <div id="description" class="description">
+    
+<h2 id="label-libogg+wrapper">libogg wrapper</h2>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="AVAILABLE">AVAILABLE
+        
+        <dd class="description">
+        
+      
+        <dt id="Ogg_Iovec_T">Ogg_Iovec_T
+        
+        <dd class="description"><p>typedef struct {</p>
+
+<pre>void *iov_base;
+size_t iov_len;</pre>
+
+<p>} ogg_iovec_t;</p>
+        
+      
+        <dt id="Ogg_Packet">Ogg_Packet
+        
+        <dd class="description"><pre>ogg_int64_t  packetno;        sequence number for decode; the framing
+                              knows where there's a hole in the data,
+                              but we need coupling so that the codec
+                              (which is in a separate abstraction
+                              layer) also knows about the gap</pre>
+
+<p>} ogg_packet;</p>
+        
+      
+        <dt id="Ogg_Page">Ogg_Page
+        
+        <dd class="description"><pre>ogg_page is used to encapsulate the data in one Ogg bitstream page</pre>
+
+<p>typedef struct {</p>
+
+<pre>unsigned char *header;
+long header_len;
+unsigned char *body;
+long body_len;</pre>
+
+<p>} ogg_page;</p>
+        
+      
+        <dt id="Ogg_Stream_State">Ogg_Stream_State
+        
+        <dd class="description"><p>} ogg_stream_state;</p>
+        
+      
+        <dt id="Ogg_Sync_State">Ogg_Sync_State
+        
+        <dd class="description"><pre>int unsynced;
+int headerbytes;
+int bodybytes;</pre>
+
+<p>} ogg_sync_state;</p>
+        
+      
+        <dt id="Oggpack_Buffer">Oggpack_Buffer
+        
+        <dd class="description"><pre>unsigned char *buffer;
+unsigned char *ptr;
+long storage;</pre>
+
+<p>} oggpack_buffer;</p>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    <!-- Methods -->
+    
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
